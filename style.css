@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background: #600789;
-  color: #ede106;
+  background: #6d06ea;
+  color: #ecc608;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #ede106;
+  color: #ecc608;
 }
 
 #interests ul {
@@ -98,18 +98,18 @@ main {
   transform: translateY(-2px);
 }
 #interests h3 {
-  color: #ede106;
+  color: #ecc608;
 }
 
 #interests li {
-  background: #b97bd6;
-  border-color: #ede106;
-  color: #ede106;
+  background: #603a90;
+  border-color: #ecc608;
+  color: #ecc608;
 }
 
 #interests li:hover {
-  background: #ede106;
-  color: #600789;
+  background: #ecc608;
+  color: #603a90;
 }
 nav {
   display: flex;
@@ -117,8 +117,8 @@ nav {
   align-items: center;
   margin-bottom: 48px;
   padding: 16px 24px;
-  background: #b97bd6;
-  border: 1px solid #b97bd6;
+  background: #603a90;
+  border: 1px solid #b700ff;
   border-radius: 12px;
 }
 
@@ -128,11 +128,10 @@ nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #ede106;
+  color: #ecc608;
 }
 
 #nav-ul {
-  list-style: none;
   display: flex;
   gap: 8px;
   margin: 0;
@@ -140,7 +139,7 @@ nav h1 {
 }
 
 .nav-li a {
-  color: #b97bd6;
+  color: #faf7fc;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
@@ -152,8 +151,8 @@ nav h1 {
 }
 
 .nav-li a:hover {
-  background: #ede106;
-  color: #600789;
+  background: #ecc608;
+  color: #6d06ea;
 }
 /* Portfolio styles */
 .content h1 {
