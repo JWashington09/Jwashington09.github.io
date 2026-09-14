@@ -13,6 +13,14 @@ function create(obj) {
 function filterObjects(type) {
   // TODO 5: Return only the game objects of the specified type
 }
+let matchedObjects = [];
+for (let i = 0; i < moveGameObjects.length; i++) {
+  let currentObject = gameObjects[i];
+  if (currentObject.type === type) {
+    matchedObjects.push(currentObject);
+  }
+}
+return matchedObjects;
 
 function moveGameObjects(objectList) {
   // TODO 6: Move all game objects of a single type based on speeds
