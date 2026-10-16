@@ -5,42 +5,45 @@ const LEVELS = [
     name: "Level 1",
     speed: 2,
     gameObjects: [
-      { type: "obstacle", kind: "spikes", x: 1600, y: groundY },
-      { type: "enemy", kind: "bug", x: 1600, y: groundY },
-      { type: "powerup", kind: "healthUp", x: 1600, y: groundY - 50 },
-      {
-        type: "platform",
-        kind: "basicPlatform",
-        x: 800,
-        y: groundY - 100,
-        contactHealthChange: -5,
-      },
-      { type: "platform", kind: "basicPlatform", x: 600, y: groundY - 60 },
-      {
-        type: "platform",
-        kind: "basicPlatform",
-        x: 1000,
-        y: groundY - 40,
-        contactHealthChange: -10,
-      },
-      {
-        type: "platform",
-        kind: "basicPlatform",
-        x: 1200,
-        y: groundY - 80,
-        hp: 0,
-      },
+      { type: "obstacle", kind: "spikes", x: 600, y: groundY },
+      { type: "obstacle", kind: "spikes", x: 1100, y: groundY },
+      { type: "obstacle", kind: "spikes", x: 1500, y: groundY },
+      
+      { type: "enemy", kind: "bug", x: 900, y: groundY, speed: -2 },
+      { type: "enemy", kind: "bug", x: 1400, y: groundY, speed: -3 },
+      
+      { type: "powerup", kind: "healthUp", x: 1000, y: groundY - 140 },
+      { type: "powerup", kind: "healthUp", x: 1300, y: groundY - 140 },
 
-      { type: "goal", kind: "flag", x: 2000, y: groundY },
+      { type: "platform", kind: "basicPlatform", x: 800, y: groundY - 100 },
+      { type: "platform", kind: "basicPlatform", x: 1200, y: groundY - 100 },
+      { type: "platform", kind: "basicPlatform", x: 1600, y: groundY - 100 },
+
+      { type: "goal", kind: "flag", X: 2000, y: groundY }
+  
     ],
   },
   {
+    
     name: "Level 2",
     speed: 3,
     gameObjects: [
+      { type: "obstacle", kind: "spikes", x: 400, y: groundY },
+      { type: "obstacle", kind: "spikes", x: 700, y: groundY },
+      { type: "obstacle", kind: "spikes", x: 1100, y: groundY },
+      { type: "obstacle", kind: "spikes", x: 1400, y: groundY },
       { type: "obstacle", kind: "spikes", x: 1600, y: groundY },
-      { type: "enemy", kind: "bug", x: 1600, y: groundY },
+     
+      { type: "enemy", kind: "bug", x: 600, y: groundY, speed: -2 },
+      { type: "enemy", kind: "bug", x: 900, y: groundY, speed: -3 },
+      { type: "enemy", kind: "bug", x: 1300, y: groundY, speed: -2 },
+      { type: "enemy", kind: "bug", x: 1500, y: groundY, speed: -3 },
+      { type: "enemy", kind: "bug", x: 1800, y: groundY, speed: -2 },
+
+      { type: "powerup", kind: "healthUp", x: 1000, y: groundY - 140 },
+      { type: "powerup", kind: "healthUp", x: 1300, y: groundY - 140 },
       { type: "powerup", kind: "healthUp", x: 1600, y: groundY - 50 },
+      
       {
         type: "platform",
         kind: "basicPlatform",
@@ -67,7 +70,68 @@ const LEVELS = [
       { type: "goal", kind: "flag", x: 2250, y: groundY },
     ],
   },
+
+{
+
+      name: "Level 3: The Final Challenge",
+      speed: 4,
+      gameObjects: [
+{ type: "obstacle", kind: "spikes", x: 400, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 600, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 900, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 1200, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 1500, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 1800, y: groundY },
+{ type: "obstacle", kind: "spikes", x: 2100, y: groundY },
+
+{ type: "enemy", kind: "bug", x: 500, y: groundY, speed: -3 },
+{ type: "enemy", kind: "bug", x: 800, y: groundY, speed: -4 },
+{ type: "enemy", kind: "bug", x: 1100, y: groundY, speed: -3 },
+{ type: "enemy", kind: "bug", x: 1400, y: groundY, speed: -4 },
+{ type: "enemy", kind: "bug", x: 1700, y: groundY, speed: -3 },
+{ type: "enemy", kind: "bug", x: 2000, y: groundY, speed: -5 },
+    
+{ type: "powerup", kind: "healthUp", x: 700, y: groundY - 140 },
+{ type: "powerup", kind: "healthUp", x: 1000, y: groundY - 140 },
+{ type: "powerup", kind: "healthUp", x: 1300, y: groundY - 140 },
+{ type: "powerup", kind: "healthUp", x: 1900, y: groundY - 140 },
+
+{ type: "platform", kind: "basicPlatform", x: 700, y: groundY - 80 },
+{ type: "platform", kind: "basicPlatform", x: 10000, y: groundY - 60 },
+{ type: "platform", kind: "basicPlatform", x: 1300, y: groundY - 80 },
+{ type: "platform", kind: "basicPlatform", x: 1600, y: groundY - 100 },
+{ type: "platform", kind: "basicPlatform", x: 1900, y: groundY - 60 },
+    
+],
+}
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let currentLevel = LEVELS[0];
 let currentLevelIndex = 0;
